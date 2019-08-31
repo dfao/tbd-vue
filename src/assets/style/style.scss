@@ -1,0 +1,61 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+ul{
+  max-width: 50rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.item-list{
+  li{
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+  }
+  li{
+    img{
+      margin-right: 1rem;
+    }
+  }
+  li+li{
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+}
+form{
+  text-align: left;
+}
+label{
+  display: block;
+}
+.new-dog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.view-model{
+  margin-top: 4rem;
+  padding: .5rem 1rem;
+  font-family: monospace;
+  color:rgba(0,0,0,0.7);
+  font-size: .8rem;
+}
+ul.pagination{
+  a{
+    color:#444;
+    text-decoration: none;
+  }
+  display: flex;
+  li+li{
+    margin-left: .5rem;
+  }
+  li.active a{
+    color:#2c3e50;
+    text-decoration: underline;
+  }
+}
